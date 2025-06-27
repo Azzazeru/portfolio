@@ -41,7 +41,7 @@ export default function ContactSection() {
 								whileHover={{ scale: 1.02 }}
 								className="inline-block px-6 py-3 bg-green-500/10 text-green-400 rounded-lg border border-green-500/20 hover:bg-green-500/20 transition-colors"
 							>
-								aaron.fuentesdioca@com
+								aaron.fuentesdioca@gmail.com
 							</motion.a>
 							<p className="text-green-500 mt-8 mb-4">$ ls ./social-links</p>
 							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -72,22 +72,27 @@ export default function ContactSection() {
 									</div>
 									<div>
 										<p className="font-semibold text-gray-200">LinkedIn</p>
-										<p className="text-sm text-gray-400">Alex Chen</p>
+										<p className="text-sm text-gray-400">Aaron Fuentes Diocares</p>
 									</div>
 								</motion.a>
 								<motion.a
-									href="#"
+									href="https://www.instagram.com/zeruazzazel"
 									whileHover={{ scale: 1.05 }}
 									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
 								>
 									<div className="p-2 bg-gray-700/50 rounded-lg group-hover:bg-gray-600/50 transition-colors">
-										<svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-											<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+										<svg
+											className="w-5 h-5 text-green-400"
+											fill="currentColor"
+											viewBox="0 0 24 24"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.25 2.375a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" />
 										</svg>
 									</div>
 									<div>
-										<p className="font-semibold text-gray-200">X</p>
-										<p className="text-sm text-gray-400">@azzazeru</p>
+										<p className="font-semibold text-gray-200">Instagram</p>
+										<p className="text-sm text-gray-400">@zeruazzazel</p>
 									</div>
 								</motion.a>
 							</div>

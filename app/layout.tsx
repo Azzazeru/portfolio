@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import VisitLogger from './components/VisitLogger';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -19,7 +20,6 @@ export const metadata: Metadata = {
 		'Software Engineer',
 		'System Architecture',
 		'API Development',
-		'Database Design',
 		'Cloud Computing',
 		'Microservices',
 		'DevOps',
@@ -76,7 +76,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				<VisitLogger />
+				{children}
+			</body>
 		</html>
 	);
 }

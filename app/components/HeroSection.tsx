@@ -29,10 +29,10 @@ export default function HeroSection() {
 						<p className="text-green-500">$ skills</p>
 						<div className="flex flex-wrap gap-2 mt-2">
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Node.js</span>
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">JavaScript</span>
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">TypeScript</span>
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Python</span>
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Linux</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Git</span>
 						</div>
 					</div>
 				</motion.div>
