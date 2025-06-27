@@ -10,6 +10,7 @@ const duocCerts = [
 			'Backend con Django',
 			'Mobile con Ionic/Angular y JSON-Server',
 		],
+		url: '#'
 	},
 	{
 		title: 'Arquitectura de Software',
@@ -18,6 +19,8 @@ const duocCerts = [
 			'Integración y creación de APIs Rest',
 			'Seguridad en aplicaciones',
 		],
+		url: '#'
+
 	},
 ];
 
