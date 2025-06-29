@@ -13,7 +13,7 @@ const projects = [
 			'Implementación de autenticación y autorización de usuarios utilizando JWT.',
 		],
 		tech: ['NodeJS', 'Express', 'MongoDB', 'Mongoose', 'React', 'JWT'],
-		repo: 'https://github.com/Azzazeru/mern-todo',
+		repo: 'https://github.com/Azzazeru/Stack-MERN-Project',
 	},
 ];
 
