@@ -2,10 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  assetPrefix: '/portfolio/',
-  baseBath: '/portfolio',
   output: 'export',
-  trailingSlash: true
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+    domains: ['images.credly.com', 'www.svgrepo.com', 'www.freecodecamp.org'],
+  },
 };
 
 export default nextConfig;

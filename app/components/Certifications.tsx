@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const duocCerts = [
 	{
@@ -8,7 +9,7 @@ const duocCerts = [
 		items: [
 			'Programación de algoritmos en Python',
 			'Backend con Django',
-			'Mobile con Ionic/Angular y JSON-Server',
+			'Programacion Orientada a Objetos Java',
 		],
 		url: '#'
 	},
@@ -20,12 +21,21 @@ const duocCerts = [
 			'Seguridad en aplicaciones',
 		],
 		url: '#'
-
 	},
 ];
 
 //? Sacar imagenes de aca futuro Azza: https://www.svgrepo.com/vectors/
 const otherCerts = [
+	{
+		title: 'AZ-900',
+		url: 'https://www.credly.com/badges/4a5349f4-99c8-487d-8595-e0c72ef8e3c9',
+		image: 'https://images.credly.com/size/680x680/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png'
+	},
+	{
+		title: 'DevOps Essentials',
+		url: 'https://www.credly.com/badges/1205bba8-f1e5-4176-81d4-d2be07cc248b',
+		image: 'https://images.credly.com/size/680x680/images/c3f12faf-d477-49f0-8032-32121303dc55/blob'
+	},
 	{
 		title: 'Backend y APIs',
 		url: 'https://www.freecodecamp.org/certification/dev-azzazel/back-end-development-and-apis',
@@ -127,14 +137,19 @@ export default function Certifications() {
 								}}
 								className="aspect-square w-[100px] h-[100px] flex flex-col items-center justify-center bg-gray-800/60 rounded-lg border border-gray-700 shadow-md text-green-400 font-medium text-center p-2 text-xs transition-transform no-underline overflow-hidden"
 							>
-								{image && (
-									<img
-										src={image}
-										alt={`${title} logo`}
-										className="w-6 h-6 mb-1 object-contain"
-										loading="lazy"
-									/>
-								)}
+								{image ? (
+									<div className="mb-1 flex items-center justify-center w-8 h-8 bg-white/5 rounded-full p-1">
+										<Image
+											src={image}
+											alt={`${title} logo`}
+											width={32}
+											height={32}
+											className="w-full h-full object-contain"
+											loading="lazy"
+											onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+										/>
+									</div>
+								) : null}
 								<span className="leading-tight">{title}</span>
 							</motion.a>
 

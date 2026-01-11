@@ -25,14 +25,18 @@ export default function HeroSection() {
 					<div className="font-mono">
 						<p className="text-green-500">$ whoami</p>
 						<h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">Aaron Fuentes(Azzazeru)</h1>
-						<p className="text-gray-400 mb-2">Junior Backend Developer</p>
+						<p className="text-gray-400 mb-2">Junior FullStack Engineer</p>
+						<p className="text-gray-300 text-sm mb-2">Ingeniero Informatico</p>
 						<p className="text-green-500">$ skills</p>
 						<div className="flex flex-wrap gap-2 mt-2">
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Node.js</span>
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">TypeScript</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">C#</span>
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Python</span>
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Linux</span>
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Git</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Docker</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Azure</span>
+
 						</div>
 					</div>
 				</motion.div>

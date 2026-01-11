@@ -4,6 +4,18 @@ import { motion } from 'framer-motion';
 
 const projects = [
 	{
+		title: 'SAGE',
+		description: 'Sistema de Administracion y Gestion Escolar, desarrollado como proyecto final de carrera.',
+		details: [
+			'Desarrollo de una plataforma web para la gestión escolar utilizando NestJS y NextJS.',
+			'Implementación de funcionalidades para la administración de estudiantes, profesores y cursos.',
+			'Creación de un sistema de autenticación y autorización para diferentes roles de usuario.',
+			'Microservicios para manejar distintas partes del sistema de forma independiente.',
+			'Doble base de datos con Postgresql y MongoDB para optimizar el rendimiento y la escalabilidad.',
+		],
+		tech: ['NodeJS', 'NestJS', 'NextJS', 'Postgresql', 'MongoDB']
+	},
+	{
 		title: 'Stack MERN - TODO List',
 		description: 'Pequeño proyecto de un TODO list con un stack MERN, como proyecto personal para aprender y practicar.',
 		details: [
@@ -12,7 +24,7 @@ const projects = [
 			'Integración de MongoDB para el almacenamiento de datos y uso de Mongoose para la manipulación de datos.',
 			'Implementación de autenticación y autorización de usuarios utilizando JWT.',
 		],
-		tech: ['NodeJS', 'Express', 'MongoDB', 'Mongoose', 'React', 'JWT'],
+		tech: ['NodeJS', 'Express', 'MongoDB', 'React'],
 		repo: 'https://github.com/Azzazeru/Stack-MERN-Project',
 	},
 ];
