@@ -1,5 +1,3 @@
-'use client';
-
 import HeroSection from '@components/HeroSection';
 import Projects from '@/app/components/Projects';
 import Certifications from '@/app/components/Certifications';

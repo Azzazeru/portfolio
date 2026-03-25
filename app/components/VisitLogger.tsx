@@ -1,22 +1,22 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
-export default function VisitIncrementer() {
-  const [incremented, setIncremented] = useState(false);
+export default function VisitLogger() {
+  const hasIncremented = useRef(false);
 
   useEffect(() => {
     function handleScroll() {
-      if (incremented) return;
+      if (hasIncremented.current) return;
       fetch('https://countapi.mileshilliard.com/api/v1/hit/azzazeru-portfolio-deploy-visits').catch(() => { });
-      setIncremented(true);
+      hasIncremented.current = true;
       window.removeEventListener('scroll', handleScroll);
     }
 
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [incremented]);
+  }, []);
 
-  return null
+  return null;
 }

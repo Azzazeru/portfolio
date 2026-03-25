@@ -14,47 +14,51 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Azzazeru - Backend Developer',
+	metadataBase: new URL('https://azzazeru.is-a.dev/'),
+	title: 'Azzazeru - Desarrollador Fullstack',
 	keywords: [
-		'Backend Developer',
-		'Software Engineer',
-		'System Architecture',
-		'API Development',
-		'Cloud Computing',
-		'Microservices',
+		'Desarrollador Fullstack',
+		'Ingeniero de Software',
+		'Arquitectura de Sistemas',
+		'Desarrollo de API',
+		'Computación en la Nube',
+		'Microservicios',
 		'DevOps',
 		'Azzazeru',
 		'Node.js',
 		'Python',
 		'Java',
-		'Distributed Systems',
-		'System Design',
-		'Backend Architecture',
+		'Sistemas Distribuidos',
+		'Diseño de Sistemas',
+		'Azzazeru',
+		'Azzazel',
+		'Aaron Israel Fuentes Diocares',
+		'Ingeniero de Software',
 	],
 	authors: [{ name: 'Azzazeru' }],
 	creator: 'Azzazeru',
 	openGraph: {
-		title: 'Azzazeru - Portfolio',
-		description: 'Passionate backend developer crafting scalable and efficient server architectures. Explore my projects and technical expertise.',
-		url: 'https://your-domain.com',
-		siteName: 'Azzazeru - Portfolio',
+		title: 'Azzazeru - Portafolio',
+		description: 'Desarrollador fullstack apasionado, creando arquitecturas escalables y eficientes. Explora mis proyectos y experiencia técnica.',
+		url: '/',
+		siteName: 'Azzazeru - Portafolio',
 		images: [
 			{
-				url: '/og-image.jpg',
-				width: 1200,
-				height: 630,
-				alt: 'Azzazeru - Backend Developer Portfolio',
+				url: '/logo.png',
+				width: 512,
+				height: 512,
+				alt: 'Azzazeru - Logo',
 			},
 		],
-		locale: 'en_US',
+		locale: 'es_ES',
 		type: 'website',
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Azzazeru - Backend Developer',
-		description: 'Passionate backend developer crafting scalable and efficient server architectures. Explore my projects and technical expertise.',
+		title: 'Azzazeru - Desarrollador Fullstack',
+		description: 'Desarrollador fullstack apasionado, creando arquitecturas escalables y eficientes. Explora mis proyectos y experiencia técnica.',
 		creator: '@yourusername',
-		images: ['/og-image.jpg'],
+		images: ['/logo.png'],
 	},
 	robots: {
 		index: true,
@@ -75,7 +79,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="es">
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 				<VisitLogger />
 				{children}
