@@ -15,8 +15,30 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://azzazeru.is-a.dev/'),
-	title: 'Azzazeru - Desarrollador Fullstack',
+	title: {
+		default: 'Azzazeru | Aaron Fuentes | Desarrollador Full Stack',
+		template: '%s | Azzazeru',
+	},
+	description:
+		'Portafolio de Aaron Fuentes (Azzazeru / Azzazel), desarrollador full stack enfocado en backend, APIs, microservicios, Node.js, Python y arquitectura de software.',
+	applicationName: 'Azzazeru Portfolio',
+	category: 'technology',
+	alternates: {
+		canonical: '/',
+	},
 	keywords: [
+		'Aaron Fuentes',
+		'Aaron Israel Fuentes Diocares',
+		'Azzazeru',
+		'Azzazel',
+		'Programador',
+		'Desarrollador',
+		'Desarrollador Full Stack',
+		'Programador backend',
+		'Portafolio programador',
+		'Portafolio desarrollador',
+		'Desarrollador Chile',
+		'Santiago Chile desarrollador',
 		'Desarrollador Fullstack',
 		'Ingeniero de Software',
 		'Arquitectura de Sistemas',
@@ -30,16 +52,14 @@ export const metadata: Metadata = {
 		'Java',
 		'Sistemas Distribuidos',
 		'Diseño de Sistemas',
-		'Azzazeru',
-		'Azzazel',
-		'Aaron Israel Fuentes Diocares',
-		'Ingeniero de Software',
 	],
-	authors: [{ name: 'Azzazeru' }],
+	authors: [{ name: 'Aaron Fuentes', url: 'https://azzazeru.is-a.dev/' }],
 	creator: 'Azzazeru',
+	publisher: 'Azzazeru',
 	openGraph: {
-		title: 'Azzazeru - Portafolio',
-		description: 'Desarrollador fullstack apasionado, creando arquitecturas escalables y eficientes. Explora mis proyectos y experiencia técnica.',
+		title: 'Azzazeru | Aaron Fuentes | Desarrollador Full Stack',
+		description:
+			'Conoce el portafolio de Aaron Fuentes (Azzazeru), desarrollador full stack especializado en backend, APIs y arquitectura escalable.',
 		url: '/',
 		siteName: 'Azzazeru - Portafolio',
 		images: [
@@ -55,10 +75,14 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Azzazeru - Desarrollador Fullstack',
-		description: 'Desarrollador fullstack apasionado, creando arquitecturas escalables y eficientes. Explora mis proyectos y experiencia técnica.',
-		creator: '@yourusername',
+		title: 'Azzazeru | Aaron Fuentes | Desarrollador Full Stack',
+		description:
+			'Portafolio de Aaron Fuentes (Azzazeru): backend, APIs, microservicios, Node.js, Python y desarrollo full stack.',
+		creator: '@azzazeru',
 		images: ['/logo.png'],
+	},
+	verification: {
+		google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
 	},
 	robots: {
 		index: true,
